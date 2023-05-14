@@ -1,12 +1,12 @@
-import React from 'react';
-import './Sidebar.css';
-import { Avatar, IconButton } from '@material-ui/core';
-import ChatIcon from '@material-ui/icons/Chat';
-import { DonutLarge, SearchOutlined } from '@mui/icons-material';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import SidebarChat from './SidebarChat.js';
+import React from "react";
+import "./Sidebar.css";
+import { Avatar, IconButton } from "@material-ui/core";
+import ChatIcon from "@material-ui/icons/Chat";
+import { DonutLarge, SearchOutlined } from "@mui/icons-material";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import SidebarChat from "./SidebarChat.js";
 
-function Sidebar() {
+function Sidebar({ users, setUsers, setSelectedUser }) {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
@@ -34,10 +34,17 @@ function Sidebar() {
       </div>
 
       <div className="sidebar__chats">
-        <SidebarChat addNewChat />
-        <SidebarChat />
-        <SidebarChat />
-        <SidebarChat />
+        <SidebarChat addNewChat={true} users={users} setUsers={setUsers} />
+
+        {users.map((user) => (
+          <SidebarChat
+            key={user.userID}
+            selectedUser={user}
+            setSelectedUser={setSelectedUser}
+            users={users}
+            setUsers={setUsers}
+          />
+        ))}
       </div>
     </div>
   );

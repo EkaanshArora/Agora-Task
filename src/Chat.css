@@ -33,7 +33,7 @@
 
 .chat__body {
   flex: 1;
-  background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
   background-repeat: repeat;
   background-position: center;
   padding: 30px;
@@ -93,4 +93,9 @@
 .chat__footer > .MuiSvgIcon-root {
   padding: 10px;
   color: gray;
+}
+
+.chat__mic {
+  margin-left: 20px;
+  margin-right: 20px;
 }

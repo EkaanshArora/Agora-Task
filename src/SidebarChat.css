@@ -17,3 +17,8 @@
 .sidebarChat__info {
   margin-left: 15px;
 }
+
+.sidebarChat__lastMessage {
+  color: grey;
+  font-size: 14px;
+}
