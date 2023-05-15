@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+<p align=center> 
+<image src = "https://github.com/thathoichoigirl/Agora-Task/assets/91699007/a0b04293-4e9a-4a49-a6f3-58750e95b2ba" width = 150 >
+</p>
+  
+---
+<h1 align="center">Whisp</h1>
+<h4 align="center">"The messaging app that speaks volumes"</h4>
+<p align="center">
+<img src="https://img.shields.io/badge/Agora%20Superstar-Technical%20Task-%23099DFD"/>
+<img src="https://img.shields.io/github/stars/thathoichoigirl/Agora-Task"/>
+<img src="https://img.shields.io/github/forks/thathoichoigirl/Agora-Task"/>
+<img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Video Demo 🤩
 
-## Available Scripts
+## Screenshots 🥰
 
-In the project directory, you can run:
+## Requirements ⚙️
 
-### `npm start`
+- Agora Chat SDK. See the [Agora Chat SDK](https://docs.agora.io/en/agora-chat/get-started/get-started-sdk?platform=web) installation instructions
+- A web browser. Preferrably Chrome or Brave; needed for **debugging**
+- An IDE that supports React. You can install **Visual Studio Code**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation 😌
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- To install the dependencies, run the following commands. Use either yarn or npm throughout the procedure.
 
-### `npm test`
+> Use the package manager yarn to install.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+yarn
+```
 
-### `npm run build`
+> Use the package manager npm to install.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- To run the project locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run eject`
+```bash
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Add your Agora Chat SDK App Token here:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+src/agora/index.js
+```
 
-## Learn More
+## Steps to run 🪜
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Head over to [Agora.io](https://console.agora.io/), create a new account or login to your existing account
+- Create a new project and enable chat feature for that project
+- Do remember to set a company name in your Agora account for the Chat SDK to get enabled
+- [Follow these steps for the following](https://docs.agora.io/en/agora-chat/get-started/enable?platform=web)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features ✨
 
-### Code Splitting
+● Authentication using UserID and Password with Agora'a Chat SDK. <br>
+● Effortless one-to-one private messaging. <br>
+● Send media files like videos, images, audio and documents in various formats. <br>
+● Record an audio note and send the same using internal methods of Agora's Chat SDK for the Web. <br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## The problem Whisp solves ✅
 
-### Analyzing the Bundle Size
+Whisp solves the problem of communication barriers by providing a platform for people to easily connect and communicate with one another, regardless of their location. With the help of Agora's Chat SDK, Whisp enables real-time messaging and voice communication, allowing users to engage in seamless conversations with friends, family, and colleagues from anywhere in the world. <br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By breaking down these communication barriers, Whisp provides a way for people to stay connected and engaged, even when physical distance might otherwise make it difficult. Whether it's catching up with loved ones, collaborating with colleagues, or simply making new connections, Whisp empowers people to communicate and build relationships in ways that were once impossible.

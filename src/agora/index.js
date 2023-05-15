@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { getCurrentUser, getRandomString } from '../helper';
 
 const appKey = '61963677#1125634';
+// Add your Agora Chat SDK app token here
+const appToken = '';
 
 const connection = new AC.connection({
   appKey: appKey,
@@ -56,8 +58,7 @@ export const useAgoraFunctions = ({ onMessageReceiveCallback }) => {
     return await fetch(url, {
       headers: {
         'content-type': 'application/json',
-        Authorization:
-          'Bearer 007eJxTYFho6eqodV35j8nErvWfb75/UvQxSnL9Nr13HpppRc7bH4cqMKSZGRulWqSZpRgappmYm6QlmhskmxunpJhbmhgnWSYb3zyakNIQyMgQk1jEzMjAysDIwMQA4jMwAAD9gR9B',
+        Authorization: `Bearer ${appToken}`,
       },
       method: 'GET',
     });
@@ -68,8 +69,7 @@ export const useAgoraFunctions = ({ onMessageReceiveCallback }) => {
       body: JSON.stringify(body),
       headers: {
         'content-type': 'application/json',
-        Authorization:
-          'Bearer 007eJxTYFho6eqodV35j8nErvWfb75/UvQxSnL9Nr13HpppRc7bH4cqMKSZGRulWqSZpRgappmYm6QlmhskmxunpJhbmhgnWSYb3zyakNIQyMgQk1jEzMjAysDIwMQA4jMwAAD9gR9B',
+        Authorization: `Bearer ${appToken}`,
       },
       method: 'POST',
     });

@@ -130,7 +130,8 @@ function Chat({ selectedUser }) {
       <div className="chat__body">
         {messages
           ? messages.map((message) => {
-              const isMessageFromMe = message.from === currentUser.userID;
+              const isMessageFromMe =
+                message.from.toLowerCase() === currentUser.userID.toLowerCase();
               const time = new Date(message.time * 1000);
               var options = {
                 weekday: 'short',

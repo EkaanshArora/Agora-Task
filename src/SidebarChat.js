@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import "./SidebarChat.css";
-import { Avatar } from "@material-ui/core";
-import { getAvatar, getCurrentUser } from "./helper";
-import { useAgoraFunctions } from "./agora";
+import React, { useEffect, useState } from 'react';
+import './SidebarChat.css';
+import { Avatar } from '@material-ui/core';
+import { getAvatar, getCurrentUser } from './helper';
+import { useAgoraFunctions } from './agora';
 
 function SidebarChat({
   addNewChat,
@@ -11,34 +11,35 @@ function SidebarChat({
   users,
   setUsers,
 }) {
-  const [lastMessage, setLastMessage] = useState("Last Message...");
+  const [lastMessage, setLastMessage] = useState('Last Message...');
 
   const { getAllUsers } = useAgoraFunctions({});
 
   const createChat = async () => {
-    const userID = prompt("Please enter user ID for chat");
+    const userID = prompt('Please enter user ID for chat');
     const currentUser = getCurrentUser();
 
     if (!userID) {
       return;
     }
     if (userID === currentUser.userID) {
-      return alert("Same User entered");
+      return alert('Same User entered');
     }
 
     const res = await getAllUsers();
-    console.log(res.entities);
-    const users = res.entities;
 
-    const userFoundInList = users.some((user) => user.username === userID);
+    const fetchedUsers = res.entities;
+    const userFoundInList = fetchedUsers.some(
+      (user) => user.username === userID
+    );
 
     if (!userFoundInList) {
-      return alert("Unknown user");
+      return alert('Unknown user');
     }
 
     const newUser = {
       userID,
-      lastMessage: "",
+      lastMessage: '',
       avatar: getAvatar(users.length),
     };
 
@@ -48,20 +49,20 @@ function SidebarChat({
   useEffect(() => {
     if (selectedUser) {
       switch (selectedUser.lastMessage.type) {
-        case "video":
-          setLastMessage("Video");
+        case 'video':
+          setLastMessage('Video');
           break;
-        case "audio":
-          setLastMessage("Audio");
+        case 'audio':
+          setLastMessage('Audio');
           break;
-        case "txt":
+        case 'txt':
           setLastMessage(selectedUser.lastMessage.msg);
           break;
-        case "file":
-          setLastMessage("File");
+        case 'file':
+          setLastMessage('File');
           break;
-        case "img":
-          setLastMessage("Image");
+        case 'img':
+          setLastMessage('Image');
           break;
         default:
           break;
