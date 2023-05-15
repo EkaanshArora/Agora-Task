@@ -14,7 +14,20 @@
 
 ## Video Demo 🤩
 
+https://github.com/thathoichoigirl/Agora-Task/assets/91699007/f29c832b-8d1c-4395-8c35-34504e42cc8f
+
+# Cover 🖼️
+![Screenshot (992)](https://github.com/thathoichoigirl/Agora-Task/assets/91699007/e158772d-ad48-4428-a349-a9182fd1e68c)
+
+
+
 ## Screenshots 🥰
+![Screenshot (990)](https://github.com/thathoichoigirl/Agora-Task/assets/91699007/9f8deb2f-610d-4f95-8e55-031ac295e75b)
+![Screenshot (989)](https://github.com/thathoichoigirl/Agora-Task/assets/91699007/412cfa8c-c3b2-4e16-aa6e-eae1ce6304b9)
+![Screenshot (991)](https://github.com/thathoichoigirl/Agora-Task/assets/91699007/6f151079-b734-46b2-8299-3ace36309ead)
+![Screenshot (994)](https://github.com/thathoichoigirl/Agora-Task/assets/91699007/8e0d0347-71e3-4c0f-93eb-a98cf30edbbc)
+
+
 
 ## Requirements ⚙️
 
@@ -77,3 +90,8 @@ src/agora/index.js
 Whisp solves the problem of communication barriers by providing a platform for people to easily connect and communicate with one another, regardless of their location. With the help of Agora's Chat SDK, Whisp enables real-time messaging and voice communication, allowing users to engage in seamless conversations with friends, family, and colleagues from anywhere in the world. <br/>
 
 By breaking down these communication barriers, Whisp provides a way for people to stay connected and engaged, even when physical distance might otherwise make it difficult. Whether it's catching up with loved ones, collaborating with colleagues, or simply making new connections, Whisp empowers people to communicate and build relationships in ways that were once impossible.
+
+<hr>
+<h4 align="center">
+	Made with ❤ by Hoimanti Dutta 👩‍💻
+</h4>
