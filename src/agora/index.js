@@ -2,7 +2,13 @@ import AC from 'agora-chat';
 import { useState } from 'react';
 import { getCurrentUser, getRandomString } from '../helper';
 
-const appKey = '61963677#1125634';
+const appKey = '';
+
+if (!appKey) {
+  alert('please add app key in /src/agora/index.js')
+}
+
+const route = appKey.split('#').map((val) => val.toLowerCase()).join('/');
 // Add your Agora Chat SDK app token here
 const appToken = '';
 
@@ -77,7 +83,7 @@ export const useAgoraFunctions = ({ onMessageReceiveCallback }) => {
 
   const register = async ({ userID, pwd }) => {
     const res = await postRequest({
-      url: 'http://a61.easemob.com/61963677/1125634/users',
+      url: `http://a61.easemob.com/${route}/users`,
       body: { username: userID, password: pwd },
     });
 
@@ -97,7 +103,7 @@ export const useAgoraFunctions = ({ onMessageReceiveCallback }) => {
 
   const getAllUsers = async () => {
     const res = await getRequest({
-      url: 'http://a61.easemob.com/61963677/1125634/users',
+      url: `http://a61.easemob.com/${route}/users`,
     });
     return await res.json();
   };
